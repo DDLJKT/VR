@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class light : MonoBehaviour
+{
+public Light myLight;
+void Start()
+{
+myLight.GetComponent<Light>();
+}
+// Update is called once per frame
+void Update()
+{
+if (Input.GetKey(KeyCode.L))
+{
+myLight.enabled = !myLight.enabled;
+}
+}
+}
